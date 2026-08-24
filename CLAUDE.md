@@ -54,7 +54,7 @@ and `www`) point at `spencerking7.github.io` and are **proxied**.
 Because they are proxied, GitHub cannot validate the hostname and so never issues a certificate
 for the custom domain — `https_certificate` is `null` by design, and the origin presents
 `CN=*.github.io`. Visitors are unaffected: Cloudflare serves its own valid cert. Check the state
-with `gh api repos/SpencerKing7/website/pages`.
+with `gh api repos/SpencerKing7/OlsensHometownCider/pages`.
 
 ## Never
 
