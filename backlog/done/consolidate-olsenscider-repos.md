@@ -1,4 +1,4 @@
-<!-- Status: active | Created: 2026-08-24 | Picked: 2026-08-24 | Branch: - | PR: - | Verify: gh api repos/SpencerKing7/website --jq .owner.login -->
+<!-- Status: done | Created: 2026-08-24 | Completed: 2026-08-24 | Picked: 2026-08-24 | Branch: - | PR: - | Verify: gh api repos/SpencerKing7/website --jq .owner.login -->
 
 # Consolidate Olsen's Cider into one repo under SpencerKing7
 
@@ -28,12 +28,16 @@ Two repos held the same project and only one was real:
    couldn't pass on stale cache.
 5. **Scaffolded** this repo to the workspace standard and moved both backlog items in.
 
+6. **Retired the local clone** at `~/Developer/OlsensHometownCider`, which pointed at the deleted
+   repo, and replaced it with a fresh clone of this one. `npm install` + `npm run build` pass
+   there, which also closed [restore-dependencies](restore-dependencies.md).
+
 ## What's still open
 
-- **Retire the local clone** at `~/Developer/OlsensHometownCider` — it points at the deleted
-  repo. Replaced by a fresh clone of this one.
 - **Optional rename** `website` → something meaningful. `OlsensCider` is free now that the old
-  repo is gone. Undecided.
+  repo is gone. Left undecided deliberately; it blocks nothing, and GitHub redirects the old path
+  if it ever happens. Note `.claude/project.json` already carries `name: OlsensHometownCider`,
+  which is what the local directory is called.
 
 ## Notes — worth keeping
 
