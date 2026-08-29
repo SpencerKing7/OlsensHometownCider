@@ -6,8 +6,8 @@ Marketing and information site for Olsen's Hometown Cider — a custom cider-pre
 React App + TypeScript with MUI, published to GitHub Pages at https://www.olsenscider.com
 (`public/CNAME` holds the custom domain).
 
-**This repo is public** — the only public one in the workspace. Anything committed here, including
-backlog items, is world-readable once pushed.
+**This repo is public** — the only public one in the workspace. Anything committed here is
+world-readable once pushed. (Work items live in Linear, which is private.)
 
 ## Layout
 
@@ -18,7 +18,7 @@ backlog items, is world-readable once pushed.
 - `src/GlobalState.tsx` — app-wide state
 - `src/theme.ts` — MUI theme
 - `public/CNAME` — the custom domain; deleting it breaks the live site
-- Work items live in `backlog/{ready,active,done}/`
+- Work items live in Linear (project `Olsen's Hometown Cider`); use `/backlog`
 
 ## Commands
 
@@ -63,5 +63,4 @@ with `gh api repos/SpencerKing7/OlsensHometownCider/pages`.
 - **Never set Cloudflare SSL/TLS to `Full (strict)`.** The origin cert is `CN=*.github.io`, which
   doesn't match the custom domain, so strict mode serves visitors 526. It must stay on `Full`
   unless the records are first un-proxied long enough for GitHub to provision a real cert.
-- **Never commit anything sensitive here.** This repo is public — treat every file, including
-  backlog items, as published.
+- **Never commit anything sensitive here.** This repo is public — treat every file as published.
