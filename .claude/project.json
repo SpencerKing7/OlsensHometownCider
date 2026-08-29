@@ -1,5 +1,6 @@
 {
   "name": "OlsensHometownCider",
   "defaultBranch": "main",
+  "linearProject": "Olsen's Hometown Cider",
   "verify": "npm run build"
 }
