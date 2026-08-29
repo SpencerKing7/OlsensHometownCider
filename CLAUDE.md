@@ -6,7 +6,7 @@ Marketing and information site for Olsen's Hometown Cider — a custom cider-pre
 React App + TypeScript with MUI, published to GitHub Pages at https://www.olsenscider.com
 (`public/CNAME` holds the custom domain).
 
-**This repo is public** — the only public one in the workspace. Anything committed here is
+**This repo is public** (ControlHome is the other public one). Anything committed here is
 world-readable once pushed. (Work items live in Linear, which is private.)
 
 ## Layout
